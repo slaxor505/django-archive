@@ -86,6 +86,11 @@ class Command(BaseCommand):
                     'ARCHIVE_EXCLUDE',
                     Command._DEFAULT_ARCHIVE_EXCLUDE,
                 ),
+                use_natural_foreign_keys=getattr(
+                    settings,
+                    'ARCHIVE_NATURAL_FOREIGN',
+                    False,
+                ),
                 stdout=fileobj,
             )
 

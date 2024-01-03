@@ -54,3 +54,13 @@ basis in the project's ``settings.py``.
 
     List of models to exclude from the archive. By default, this includes
     session data and models that are automatically populated.
+
+.. attribute:: ARCHIVE_NATURAL_FOREIGN
+
+    :default: False
+
+    Dump Django DB using `Natural Foreign keys strategy <https://docs.djangoproject.com/en/5.0/topics/serialization/#natural-keys>`_
+
+    .. code-block:: python
+
+        ARCHIVE_NATURAL_FOREIGN = True
